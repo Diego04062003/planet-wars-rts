@@ -108,3 +108,10 @@ tasks.register<JavaExec>("runDiegoGame") {
     mainClass.set("tfm.RunDiegoGameKt")
     classpath = sourceSets["main"].runtimeClasspath
 }
+
+tasks.register<JavaExec>("runVisualGame") {
+    group = "application"
+    description = "Runs a visual Planet Wars game"
+    mainClass.set("games.planetwars.view.RunVisualGameKt")
+    classpath = sourceSets["main"].runtimeClasspath
+}

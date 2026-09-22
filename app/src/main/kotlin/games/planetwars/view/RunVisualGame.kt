@@ -10,8 +10,8 @@ import xkg.jvm.AppLauncher
 fun main() {
     val gameParams = GameParams(numPlanets = 30, maxTicks = 1000)
     val gameState = GameStateFactory(gameParams).createGame()
-    val agent1 = CarefulRandomAgent()
-    val agent2 = BetterRandomAgent()
+    val agent1 = tfm.DiegoGreedyAgent()
+    val agent2 = competition_entry.GreedyHeuristicAgent()
 
     // sub in different agents as needed
 //    val agent1 = PureRandomAgent()
